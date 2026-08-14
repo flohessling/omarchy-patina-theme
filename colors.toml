@@ -39,6 +39,16 @@ selection_background = "#A2B5C1"
 lighter_background = "#1a1c20"
 selection = "#262a30"
 
+# Hyprland active window border.
+#
+# Omarchy 3.x read this theme's hyprland.conf, which pinned the border to the
+# green (color2). Quattro generates hyprland.lua from
+# `hypr_gradient hyprland_active_border accent` instead, so without this key the
+# border silently falls back to accent. hyprland.conf is kept for 3.x users.
+# The inactive border is deliberately left to Quattro's rgba(595959aa) default,
+# matching what hyprland.conf did.
+hyprland_active_border = "#8DAA9A"
+
 # Normal colors (ANSI 0-7)
 color0 = "#0d0e10"
 color1 = "#b46958"
