@@ -1,14 +1,43 @@
+# Patina — a muted, cool near-black theme.
+#
+# This palette is a superset: the ANSI color0..15 names below are still resolved
+# by Omarchy 3.x, while Omarchy 4 (Quattro) maps them onto its semantic palette
+# automatically. Only the keys Quattro cannot infer correctly are set explicitly.
+
+mode = "dark"
+
 # UI Colors (extended)
 accent = "#A2B5C1"
+
+# Still required by Omarchy 3.x, which substitutes {{ cursor }} into the
+# generated helix.toml and gum.env.conf. Quattro ignores this key and always
+# derives the cursor from bright_foreground, so there the mint cursor lives in
+# this theme's own foot.ini instead.
 cursor = "#81c784"
 
 # Primary colors
 foreground = "#E1E1E1"
 background = "#0d0e10"
 
-# Selection colors
+# Selection colors — terminal text-selection highlight.
 selection_foreground = "#0d0e10"
 selection_background = "#A2B5C1"
+
+# Omarchy 4 surfaces.
+#
+# `selection` is a *background* surface in Quattro (btop selected_bg/meter_bg,
+# neovim selection) — distinct from selection_background above. Left unset it
+# falls back to selection_background and renders as a near-white block, so it is
+# pinned to a raised surface tone instead.
+#
+# `lighter_background` otherwise falls back to color0 and collapses onto
+# background, leaving no surface separation anywhere it is used.
+#
+# Both step the background's cool tint upward: #0d0e10 -> #1a1c20 -> #262a30.
+# dark_background / darker_background are deliberately left to Quattro, which
+# derives them by mixing background toward black (25% / 50%).
+lighter_background = "#1a1c20"
+selection = "#262a30"
 
 # Normal colors (ANSI 0-7)
 color0 = "#0d0e10"
