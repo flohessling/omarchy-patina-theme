@@ -1,0 +1,16 @@
+# Overrides the [launcher] section of the generated shell.toml.
+# Quattro merged the launcher into the unified menu (SUPER + SPACE), so this
+# mirrors shell.menu.toml rather than keeping the stock 0.95 card — otherwise
+# the same visual surface would frost differently depending on how it opened.
+background                = "#0d0e10"
+background-alpha          = 0.8
+text                      = "#E1E1E1"
+border                    = "hyprland.active-border-foreground"
+border-alpha              = 1.0
+scrim                     = "#0d0e10"
+scrim-alpha               = 0.5
+selected-background       = "#E1E1E1"
+selected-background-alpha = 0.08
+selected-text             = "#A2B5C1"
+selected-border           = "hyprland.active-border-foreground"
+selected-border-alpha     = 0.25

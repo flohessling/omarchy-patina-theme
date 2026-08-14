@@ -1,0 +1,12 @@
+# Overrides the [bar] section of the generated shell.toml.
+# Section overrides replace the whole block, so every key it needs is restated.
+# background-alpha 0.6 matches the pre-Quattro waybar, whose module groups were
+# alpha(@background, 0.6). Reads as frosted only where the compositor blurs the
+# omarchy-bar layer; without that it is plainly see-through.
+background       = "#0d0e10"
+background-alpha = 0.6
+text             = "#E1E1E1"
+active           = "#b46958"
+scale-with-font  = true
+size-horizontal  = 26
+size-vertical    = 28

@@ -1,0 +1,17 @@
+# Overrides the [menu] section of the generated shell.toml.
+# background-alpha 0.8 matches the pre-Quattro waybar menu, which was
+# alpha(@background, 0.8). scrim is left at 0.5 so the dim behind the card is
+# unchanged. See shell.launcher.toml — Quattro merged the launcher into this
+# same surface, so the two are kept in step.
+background                = "#0d0e10"
+background-alpha          = 0.8
+text                      = "#E1E1E1"
+border                    = "hyprland.active-border-foreground"
+border-alpha              = 1.0
+scrim                     = "#0d0e10"
+scrim-alpha               = 0.5
+selected-background       = "#E1E1E1"
+selected-background-alpha = 0.08
+selected-text             = "#A2B5C1"
+selected-border           = "hyprland.active-border-foreground"
+selected-border-alpha     = 0.25

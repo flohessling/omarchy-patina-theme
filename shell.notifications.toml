@@ -1,0 +1,10 @@
+# Overrides the [notifications] section of the generated shell.toml.
+# background-alpha 0.663 reproduces mako's background-color=#0d0e10A9 (A9/255).
+# border stays a runtime ref, so it keeps resolving to hyprland_active_border
+# (patina's green #8DAA9A) exactly as mako's border-color did.
+background       = "#0d0e10"
+background-alpha = 0.663
+text             = "#E1E1E1"
+border           = "hyprland.active-border"
+border-alpha     = 1.0
+countdown        = "#A2B5C1"
