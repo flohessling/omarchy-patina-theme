@@ -1,0 +1,20 @@
+# Overrides the [tooltip] section of the generated shell.toml.
+# Section overrides replace the whole block, so every key is restated.
+#
+# background-alpha 0.8 matches the pre-Quattro waybar, whose tooltip was
+# alpha(@background, 0.8). Stock ships 0.97, which reads as near-opaque next to
+# the 0.6 bar once the rest of the shell is frosted.
+#
+# Reads as frosted only because ~/.config/hypr/looknfeel.lua sets
+# blur_popups = true on the omarchy-bar layer rule — tooltips are xdg popups of
+# that layer, not a layer of their own, so plain `blur` does not reach them.
+#
+# The border is left on the stock hyprland.active-border-foreground ref so
+# tooltips match the menu and notification surfaces. The old waybar tooltip used
+# a fainter 1px alpha(@foreground, 0.15) edge instead; to go back to that, set
+# border = "#E1E1E1" with border-alpha = 0.15.
+background       = "#0d0e10"
+background-alpha = 0.8
+text             = "#E1E1E1"
+border           = "hyprland.active-border-foreground"
+border-alpha     = 1.0
