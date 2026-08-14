@@ -1,0 +1,25 @@
+# Overrides the [lock] section of the generated shell.toml.
+# Section overrides replace the whole block, so every key is restated.
+#
+# Carries the pre-Quattro hyprlock look forward. Those values came from this
+# theme's hyprlock.conf variables plus the input-field block in ~/.config/hypr:
+#   inner_color rgba(13,14,16,0.66) -> background + background-alpha
+#   outer_color rgba(141,170,154,1) -> border, left as the runtime ref so it
+#                                      keeps tracking hyprland_active_border
+#   check_color rgba(136,175,162,1) -> border-active (the verifying state)
+#   placeholder_text foreground     -> placeholder
+#
+# border-active is set explicitly on purpose. The stock section points both
+# `border` and `border-active` at the same "hyprland.active-border" ref, which
+# leaves the verifying state visually identical to idle.
+background       = "#0d0e10"
+background-alpha = 0.66
+text             = "#E1E1E1"
+placeholder      = "#8A8885"
+text-error       = "#b46958"
+border           = "hyprland.active-border"
+border-active    = "#88AFA2"
+border-error     = "#b46958"
+border-alpha     = 1.0
+selection        = "#A2B5C1"
+selection-alpha  = 0.45
