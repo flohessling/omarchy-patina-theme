@@ -1,25 +1,6 @@
-# Overrides the [lock] section of the generated shell.toml.
-# Section overrides replace the whole block, so every key is restated — an
-# omitted key falls back to the shell's own default, never to a sibling key.
-#
-# Aligned with [polkit] so the lock prompt and the polkit password prompt read
-# as the same surface:
-#   background-alpha 1.0            matches polkit's solid card (was 0.66, the
-#                                   old hyprlock inner_color)
-#   border-active = the border ref  polkit has no separate typing state, so the
-#                                   border must stay constant while typing.
-#                                   Set explicitly rather than omitted: the
-#                                   shell falls back to `accent` (#A2B5C1), not
-#                                   to `border`.
-#
-# What cannot be matched by theming, being hardcoded in the shell's QML: the
-# dot glyph (lock uses U+25CF, polkit U+2022), the 381x67 field versus polkit's
-# card with an icon, and the border thickness (3 versus Style.space(2)).
-#
-# Remaining pre-Quattro hyprlock inheritance:
-#   outer_color rgba(141,170,154,1) -> border, left as the runtime ref so it
-#                                      keeps tracking hyprland_active_border
-#   placeholder_text foreground     -> placeholder
+# Overrides [lock]; a section override replaces the whole block.
+# Aligned with [polkit]. border-active is restated so the border stays constant
+# while typing — omitted, it falls back to accent, not to border.
 background       = "#0d0e10"
 background-alpha = 1.0
 text             = "#E1E1E1"

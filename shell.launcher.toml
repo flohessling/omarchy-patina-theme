@@ -1,7 +1,5 @@
-# Overrides the [launcher] section of the generated shell.toml.
-# Quattro merged the launcher into the unified menu (SUPER + SPACE), so this
-# mirrors shell.menu.toml rather than keeping the stock 0.95 card — otherwise
-# the same visual surface would frost differently depending on how it opened.
+# Overrides [launcher]; a section override replaces the whole block.
+# Mirrors shell.menu.toml — Quattro merged the launcher into the menu.
 background                = "#0d0e10"
 background-alpha          = 0.8
 text                      = "#E1E1E1"

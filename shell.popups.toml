@@ -1,15 +1,5 @@
-# Overrides the [popups] section of the generated shell.toml.
-# Section overrides replace the whole block, so every key is restated.
-#
-# Shared by every bar flyout: the widget panels (audio, bluetooth, network,
-# display, power), the volume/brightness OSDs, dropdowns and popup cards.
-# Stock ships 1.0, which left these the only fully opaque surfaces once the bar,
-# menus, notifications, tooltip and lock were frosted. 0.8 matches menu,
-# launcher and tooltip.
-#
-# Frosted only because ~/.config/hypr/looknfeel.lua blurs the omarchy-keyboard-panel
-# and omarchy-osd layers — those windows are transparent with an opaque card
-# inside, so the rule needs ignore_alpha or the whole screen frosts.
+# Overrides [popups]; a section override replaces the whole block.
+# Frosted only where the omarchy-keyboard-panel and omarchy-osd layers are blurred.
 background       = "#0d0e10"
 background-alpha = 0.8
 text             = "#E1E1E1"

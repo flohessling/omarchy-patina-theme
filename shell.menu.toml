@@ -1,8 +1,5 @@
-# Overrides the [menu] section of the generated shell.toml.
-# background-alpha 0.8 matches the pre-Quattro waybar menu, which was
-# alpha(@background, 0.8). scrim is left at 0.5 so the dim behind the card is
-# unchanged. See shell.launcher.toml — Quattro merged the launcher into this
-# same surface, so the two are kept in step.
+# Overrides [menu]; a section override replaces the whole block.
+# Kept in step with shell.launcher.toml — Quattro merged the two surfaces.
 background                = "#0d0e10"
 background-alpha          = 0.8
 text                      = "#E1E1E1"

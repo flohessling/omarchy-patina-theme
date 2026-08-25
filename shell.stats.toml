@@ -1,17 +1,4 @@
-# Adds a [stats] section to the generated shell.toml.
-#
-# Not a stock Omarchy surface: omarchy-theme-set-templates globs every
-# shell.*.toml in a theme directory and appends the section when the generated
-# file has no block by that name, so a theme can publish tokens of its own.
-# These are read by the System Stats bar plugin (flohessling.stats) for its
-# sparklines and per-core meters.
-#
-# Quattro's semantic palette has no green — colors.toml `red`/`color1` becomes
-# `urgent`, but `color2` is not exposed under any name — so the calm state is
-# pinned to patina's own #8DAA9A here rather than borrowed from another surface
-# via hyprland.active-border, which is a *border* token and free to change.
-#
-# chart-alert restates color1 for symmetry; dropping it would fall back to
-# `urgent`, which resolves to the same value today.
+# Adds a [stats] section, read by the flohessling.stats bar plugin.
+# chart is patina's green: Quattro's palette exposes no green under any name.
 chart       = "#8DAA9A"
 chart-alert = "#b46958"
